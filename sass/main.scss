@@ -4,9 +4,47 @@
 	margin: 0;
 }
 body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
 	background-color: #333;
 	font-family: 'Roboto Condensed', sans-serif;
 	color: #fff;
-	font-size: 36px;
-	font-weight: bold;
+	// font-size: 36px;
+	// font-weight: bold;
+}
+// main card
+.card {
+	width: 400px;
+	border-radius: 8px;
+	background-color: #ddd;
+	color: black;
+	overflow: hidden;
+
+	// card's header image
+	&__img {
+		width: 100%;
+	}
+	&__body {
+		padding: 10px 20px;
+	}
+	&__text {
+		margin: 20px 0;
+	}
+	&__btns {
+		display: flex;
+		justify-content: space-around;
+	}
+	&__btn {
+		padding: 10px 20px;
+		border: 1px solid black;
+		border-radius: 8px;
+		cursor: pointer;
+
+		&--highlight {
+			background-color: #26ae8b;
+			color: #ddd;
+		}
+	}
 }
