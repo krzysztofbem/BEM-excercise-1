@@ -4,6 +4,7 @@
 	margin: 0;
 }
 body {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -16,6 +17,8 @@ body {
 }
 // main card
 .card {
+	position: absolute;
+	top: 0;
 	width: 400px;
 	border-radius: 8px;
 	background-color: #ddd;
@@ -46,5 +49,47 @@ body {
 			background-color: #26ae8b;
 			color: #ddd;
 		}
+	}
+}
+
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	bottom: 0;
+	width: 400px;
+	border-radius: 8px;
+	border: 1px solid gray;
+	background-color: transparent;
+
+	&__body {
+		padding: 15px 0;
+	}
+
+	&__title {
+		text-transform: uppercase;
+		color: gray;
+		font-size: 40px;
+	}
+	&__data-section {
+		margin: 20px 0;
+	}
+	&__text {
+		font-size: 16px;
+		font-weight: lighter;
+		color: gray;
+	}
+	&__field {
+		height: 15px;
+		border-radius: 2px;
+		border: 1px solid black;
+	}
+
+	&__btn2 {
+		padding: 10px 20px;
+		border: 1px solid black;
+		border-radius: 8px;
+		cursor: pointer;
 	}
 }

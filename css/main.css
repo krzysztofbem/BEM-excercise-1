@@ -6,6 +6,7 @@
 }
 
 body {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,6 +23,8 @@ body {
 }
 
 .card {
+  position: absolute;
+  top: 0;
   width: 400px;
   border-radius: 8px;
   background-color: #ddd;
@@ -59,5 +62,56 @@ body {
 .card__btn--highlight {
   background-color: #26ae8b;
   color: #ddd;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 400px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  background-color: transparent;
+}
+
+.form__body {
+  padding: 15px 0;
+}
+
+.form__title {
+  text-transform: uppercase;
+  color: gray;
+  font-size: 40px;
+}
+
+.form__data-section {
+  margin: 20px 0;
+}
+
+.form__text {
+  font-size: 16px;
+  font-weight: lighter;
+  color: gray;
+}
+
+.form__field {
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.form__btn2 {
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
 }
 /*# sourceMappingURL=main.css.map */
